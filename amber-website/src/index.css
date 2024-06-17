@@ -17,7 +17,17 @@
 
 [data-theme='dark'] {
   
-  --text-primary: white;
+  --primary-color: #E7A8C6;
+  --primary-color-2: #f5cee1;
+  --secondary-color: #22b390;
+  --text-color-1: #ffffff;
+  --text-color-2: #588068;
+  --background-color-1: #f5f3f5;
+  --background-color-2: #ececec;
+  --pastel-green: #b7e4c7;
+  --pastel-pink: #f4c2c2;
+  --pastel-blue: #efc9d9;
+  --pastel-purple: #d4b7f4;
   
 }
 
@@ -552,6 +562,6 @@ button:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #ffffff; /* Change this to any dark color you want */
+    color: #213547; /* Change this to any dark color you want */
   }
 }
