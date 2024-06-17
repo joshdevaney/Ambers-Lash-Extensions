@@ -10,7 +10,7 @@ function Navbar() {
 
       {/* <h2 className="title">Amber</h2> */}
       
-        <div className="menu" onClick={() => {
+      <div className={`menu ${menuOpen ? "open" : ""}`} onClick={() => {
           setMenuOpen(!menuOpen);
         }}>
           <span></span>
