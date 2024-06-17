@@ -15,6 +15,12 @@
 
 }
 
+[data-theme='dark'] {
+  
+  --text-primary: white;
+  
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -129,11 +135,12 @@ body {
 .styles {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 40px;
   padding: 100px 100px;
   background-color: var(--background-color-2);
+  height: min-content;
 }
 
 .styles-cards {
@@ -141,6 +148,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 40px;
+  height: 100%;
 }
 
 #card {
@@ -411,7 +419,7 @@ button:focus-visible {
 
   .styles-cards {
     display: flex;
-    gap: 0px;
+    gap: 6px;
     flex-direction: column;
   }
 
@@ -481,7 +489,7 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
 
-    padding: 50px 0px;
+    padding: 50px 0px 6px 0px;
     background-color: var(--background-color-2);
   }
 
