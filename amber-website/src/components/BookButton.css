@@ -1,0 +1,22 @@
+.book-button{
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 00.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.25s;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.book-button:hover {
+    background-color: var(--primary-color);
+}

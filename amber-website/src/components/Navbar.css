@@ -1,47 +1,101 @@
-.navbar{
+.active{
+    background-color: #1d4ed8;
+}
+
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
-    background-color: #fff;
-    width: 100%;
-    background-color: rgb(255, 161, 207);
-    box-sizing: border-box;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
     position: sticky;
     top: 0;
-    z-index: 100;
-    height: 60px;
+    z-index: 1000;
+
 }
 
-.navbar img{
-    height: 40px;
-    padding: 10px;
-    will-change: filter;
-    transition: filter 300ms;
-}
-
-.menu-icon{
-    display: flex;
-    flex-direction: row;
+.navbar .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
     text-decoration: none;
-    list-style: none;
+    color: white;
+    width: 220px;
 }
 
-.menu-icon li{
-    /* padding: 18px 10px; */
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.menu-icon li:hover{
-    color: #c6ecff;
-}
-
-.menu-icon ul{
-    list-style-type: none;
+.navbar ul {
     display: flex;
-    gap: 40px;
+    gap: 1rem;
+    margin-right: 40px;
+}
 
+.navbar ul li {
+   list-style: none; 
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar ul li a:not(.active):hover {
+    background-color:#172554 ;
+}
+
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.navbar .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 1000px) {
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-inline-start: 0px;
+        margin-right: 0px;
+    }
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        list-style-type: none;
+    }
+
+    .navbar ul li a {
+        margin: 0.2rem 0.5rem;
+    }
 }
