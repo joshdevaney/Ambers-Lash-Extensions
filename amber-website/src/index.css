@@ -35,6 +35,8 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  text-rendering: optimizeLegibility;
+
 }
 
 .hero {
@@ -229,6 +231,8 @@ button:focus-visible {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.87);
   width: 100%;
+  -webkit-appearance: none; /* Remove default styles in Safari */
+
 }
 
 .booking-header button {
@@ -320,7 +324,7 @@ button:focus-visible {
   }
 
   .about-body img {
-    max-width: 50%;
+    max-width: 300px;
   }
 
   .styles-cards {
@@ -385,6 +389,11 @@ button:focus-visible {
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
   }
+
+  .about-body img {
+    max-width: 200px;
+  }
+
 
 }
 
@@ -530,5 +539,11 @@ button:focus-visible {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ffffff; /* Change this to any dark color you want */
   }
 }
