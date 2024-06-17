@@ -250,6 +250,9 @@ button:focus-visible {
   border: 1px solid rgba(255, 255, 255, 0.87);
   width: 100%;
   -webkit-appearance: none; /* Remove default styles in Safari */
+  background-color: var(--background-color-1);
+  color: #76788d;
+  
 
 }
 
@@ -412,6 +415,19 @@ button:focus-visible {
     max-width: 200px;
   }
 
+  .booking-header h4{
+    font-size: 2rem;
+  }
+
+  .booking-header p{
+    font-size: 1rem;
+    margin-top: -10px;
+  }
+
+  .booking-header select {
+  margin-bottom: 20px;
+  }
+
 
 }
 
@@ -564,4 +580,9 @@ button:focus-visible {
   body {
     color: #213547; /* Change this to any dark color you want */
   }
+
+  .booking-header select {
+    background-color: var(--background-color-1);
+    color: #76788d;
+    }
 }
