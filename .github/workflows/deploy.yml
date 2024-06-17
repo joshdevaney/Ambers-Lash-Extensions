@@ -12,27 +12,23 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' # specify the Node.js version here
+        uses: actions/setup-node@v3
 
       - name: Install dependencies
-        run: npm install
-        working-directory: amber-website
-        
+        uses: bahmutov/npm-install@v1
+
       - name: Build project
         run: npm run build
-        working-directory: amber-website
 
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: ./dist
 
-      - name: Deploy to GitHub Pages
-        run: npm run deploy
-        working-directory: amber-website
-
- 
   deploy:
     name: Deploy
     needs: build
@@ -47,10 +43,7 @@ jobs:
           path: ./dist
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.email "joshdevaney99@gmail.com"
-              git config --global user.name "joshdevaney"
-                  npm run deploy
-                  env: 
-                        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
