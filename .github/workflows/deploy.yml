@@ -25,9 +25,13 @@ jobs:
         
       - name: Build project
         run: npm run build
+        working-directory: amber-website
+
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
+        working-directory: amber-website
+
 
   deploy:
     name: Deploy
