@@ -32,7 +32,7 @@ jobs:
         run: npm run deploy
         working-directory: amber-website
 
-
+ 
   deploy:
     name: Deploy
     needs: build
