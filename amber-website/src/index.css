@@ -162,7 +162,7 @@ body {
 
 #card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
+  z-index: 1;
 }
 
 button {
@@ -333,21 +333,21 @@ button:focus-visible {
 
 @media screen and (max-width: 900px) {
 
-.booking-box {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  align-items: stretch;
-}
+  .booking-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: stretch;
+  }
 
 
 
-.calendar-grid {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
-}
+  .calendar-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
 
 }
 
@@ -413,6 +413,7 @@ button:focus-visible {
     flex-direction: row;
     align-items: start;
   }
+
 
   #card h4 {
     width: 50%;
@@ -499,6 +500,21 @@ button:focus-visible {
 
 }
 
+
+@media screen and (max-width: 420px) {
+  .hero {
+    padding: 0px 10%;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero h3 {
+    font-size: 1em;
+  }
+
+}
 
 
 
