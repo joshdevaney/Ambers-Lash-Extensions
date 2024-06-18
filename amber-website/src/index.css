@@ -213,7 +213,7 @@ button:focus-visible {
   justify-content: center;
   padding: 50px 0px;
 
-  background-color: var(--primary-color-2);
+  background-color: var(--background-color-1);
 }
 
 .booking-box {
@@ -457,6 +457,11 @@ button:focus-visible {
     align-items: start;
   }
 
+  #card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+    z-index: 1;
+  }
+
 
   #card h4 {
     width: 50%;
@@ -530,7 +535,7 @@ button:focus-visible {
 
 
   #card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
 
   }
 
@@ -555,6 +560,22 @@ button:focus-visible {
 
   .hero h3 {
     font-size: 1em;
+  }
+
+  .calendar-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+  }
+
+  .calendar-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
 }
