@@ -16,10 +16,10 @@
 }
 
 [data-theme='dark'] {
-  
+
   --primary-color: #E7A8C6;
   --primary-color-2: #f5cee1;
-  --secondary-color: #22b390;
+  --secondary-color: #A8E7C9;
   --text-color-1: #ffffff;
   --text-color-2: #588068;
   --background-color-1: #f5f3f5;
@@ -28,7 +28,7 @@
   --pastel-pink: #f4c2c2;
   --pastel-blue: #efc9d9;
   --pastel-purple: #d4b7f4;
-  
+
 }
 
 a {
@@ -67,13 +67,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 700px;
-
-  color: var(--text-color-1)
+  font-family: "Noto Serif Display", serif;
+  color: var(--text-color-1);
 }
 
 .hero h3 {
   margin-bottom: 20px;
   font-weight: 400;
+}
+
+.hero button {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 
@@ -136,6 +140,11 @@ body {
   gap: 10px;
   padding: 100px 0px;
   background-color: var(--background-color-1);
+
+}
+
+.services h4 {
+  color: var(--text-color-3);
 }
 
 .services p {
@@ -151,6 +160,10 @@ body {
   padding: 100px 100px;
   background-color: var(--background-color-2);
   height: min-content;
+}
+
+.styles h4 {
+  color: var(--text-color-3);
 }
 
 .styles-cards {
@@ -183,6 +196,76 @@ body {
 #card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-top: 60px;
+
+}
+
+.price-list span{
+  color: var(--text-color-3);
+  background-color: var(--text-color-3);
+  max-width: 300px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+.price-list h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 700;
+  color: var(--text-color-3)
+}
+
+
+.price-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 60px;
+  width: 100%;
+  align-items: start;
+
+}
+
+
+
+.price-list #price-card {
+  text-align: left;
+  max-width: 400px;
+
+}
+
+.price-list #price-card p {
+  font-weight: 600;
+
+}
+
+.price-list #price-card h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 700;
+  color: var(--text-color-3);
+}
+
+.price-list #price-card .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+
 }
 
 button {
@@ -249,10 +332,11 @@ button:focus-visible {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.87);
   width: 100%;
-  -webkit-appearance: none; /* Remove default styles in Safari */
+  -webkit-appearance: none;
+  /* Remove default styles in Safari */
   background-color: var(--background-color-1);
   color: #76788d;
-  
+
 
 }
 
@@ -311,6 +395,27 @@ button:focus-visible {
 .calendar-day:hover {
   background-color: var(--pastel-blue);
   border-radius: 50%;
+
+}
+
+@media screen and (max-width: 1500px) {
+  .price-cards {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  #price-card {
+    text-align: left;
+    max-width: 300px;
+
+  }
 
 }
 
@@ -374,6 +479,27 @@ button:focus-visible {
     gap: 10px;
   }
 
+  .price-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+
+  }
+
+  #price-card {
+    text-align: left;
+    width: 100%;
+
+  }
+
+  #price-card p {
+    padding: 0px;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -415,17 +541,17 @@ button:focus-visible {
     max-width: 200px;
   }
 
-  .booking-header h4{
+  .booking-header h4 {
     font-size: 2rem;
   }
 
-  .booking-header p{
+  .booking-header p {
     font-size: 1rem;
     margin-top: -10px;
   }
 
   .booking-header select {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
 
@@ -464,10 +590,11 @@ button:focus-visible {
 
 
   #card h4 {
-    width: 50%;
+    width: 45%;
     padding: 10px 10px;
     font-size: 16pt;
     text-align: left;
+    color: #393d52;
   }
 
   #card:nth-child(2n) h4 {
@@ -548,6 +675,37 @@ button:focus-visible {
 
 }
 
+@media screen and (max-width: 560px) {
+
+  .price-list{
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .price-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 0px 0px;
+
+  }
+
+  .price-list #price-card {
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    padding: 0px;
+
+
+  }
+
+  #price-card p {
+    padding: 0px;
+  }
+}
 
 @media screen and (max-width: 420px) {
   .hero {
@@ -599,11 +757,12 @@ button:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #213547; /* Change this to any dark color you want */
+    color: #213547;
+    /* Change this to any dark color you want */
   }
 
   .booking-header select {
     background-color: var(--background-color-1);
     color: #76788d;
-    }
+  }
 }

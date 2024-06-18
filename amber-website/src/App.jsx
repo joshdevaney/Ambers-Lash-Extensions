@@ -50,6 +50,7 @@ function App() {
         <p>The services I currently provide include classic lash extensions, hybrid lash extensions and volume lash extensions. I aim to provide a comfortable and chilled environment for clients. I provide beverages ( bottled water and cans of soda) for every client.
           <br></br> <br></br>
           You won't leave empty handed, every client receives a basic after care package once their first appointment has been completed. Toilet breaks / smoke breaks are encouraged as I want you to feel like you are at home!</p>
+
       </div>
 
       <div className="styles">
@@ -80,6 +81,132 @@ function App() {
           <div className="natural-eye" id="card">
             <h4>Natural Eye</h4>
             <img src={naturalEye} alt="Natural Eye" />
+          </div>
+        </div>
+
+        <div className="price-list">
+
+          <h2>Price List</h2>
+
+          <span></span>
+
+          <div className="price-cards">
+
+            <div className="classic" id="price-card">
+              <h4>Classic Lash Extensions</h4>
+              <div className="price">
+                <p>Full Set</p>
+                <p>€45</p>
+              </div>
+              <div className="price">
+                <p>Refill 2/3 Weeks</p>
+                <p>€35</p>
+              </div>
+              <div className="price">
+                <p>Refill 4 Weeks</p>
+                <p>€40</p>
+              </div>
+              <div className="price">
+                <p>Full Set of Spikes</p>
+                <p>€50</p>
+              </div>
+            </div>
+
+
+
+            <div className="hybrid" id="price-card">
+              <h4>Hybrid Lash Extensions</h4>
+              <div className="price">
+                <p>Full Set</p>
+                <p>€55</p>
+              </div>
+              <div className="price">
+                <p>Refill 2/3 Weeks</p>
+                <p>€45</p>
+              </div>
+              <div className="price">
+                <p>Refill 4 Weeks</p>
+                <p>€50</p>
+              </div>
+              <div className="price">
+                <p>Lash Removal</p>
+                <p>€15</p>
+              </div>
+            </div>
+
+            <div className="volume" id="price-card">
+              <h4>Classic Lash Extensions</h4>
+              <div className="price">
+                <p>Full Set</p>
+                <p>€60</p>
+              </div>
+              <div className="price">
+                <p>Refill 2/3 Weeks</p>
+                <p>€45</p>
+              </div>
+              <div className="price">
+                <p>Refill 4 Weeks</p>
+                <p>€50</p>
+              </div>
+
+            </div>
+
+            <div className="lashes" id="price-card">
+              <h4>Lashes</h4>
+              <div className="price">
+                <p>Lash Lift</p>
+                <p>€35</p>
+              </div>
+              <div className="price">
+                <p>Lash Tint</p>
+                <p>€15</p>
+              </div>
+              <div className="price">
+                <p>Lash Lift & Tint</p>
+                <p>€45</p>
+              </div>
+
+            </div>
+
+            <div className="brows" id="price-card">
+              <h4>Brows</h4>
+              <div className="price">
+                <p>Brow Lamination</p>
+                <p>€30</p>
+              </div>
+              <div className="price">
+                <p>Brow Tint</p>
+                <p>€15</p>
+              </div>
+              <div className="price">
+                <p>Brow Lamination & Tint</p>
+                <p>€40</p>
+              </div>
+
+            </div>
+
+            
+            <div className="combo" id="price-card">
+              <h4>Combo Deals</h4>
+              <div className="price">
+                <p>Lash & Brow Tint, Lift & Lamination </p>
+                <p>€75</p>
+              </div>
+              <div className="price">
+                <p>Classic extensions & Brows&#40;Tint & Lam&#41;</p>
+                <p>€75</p>
+              </div>
+              <div className="price">
+                <p>Hybrid extensions & Brows&#40;Tint & Lam&#41;</p>
+                <p>€85</p>
+              </div>
+              <div className="price">
+                <p>Volume extensions & Brows&#40;Tint & Lam&#41;</p>
+                <p>€90</p>
+              </div>
+
+            </div>
+
           </div>
 
         </div>
@@ -117,28 +244,28 @@ function App() {
                 <option value="kitten-eye">Kitten Eye</option>
                 <option value="natural-eye">Natural Eye</option>
               </select>
-              </div>
-
-              <BookButton />
-
             </div>
-            <div className="calendar">
-              <h3>Calendar</h3>
-              <div className="calendar-grid">
-                {[...Array(31)].map((_, i) => (
-                  <div className="calendar-day" key={i}>
-                    {i + 1}
-                  </div>
-                ))}
-              </div>
+
+            <BookButton />
+
+          </div>
+          <div className="calendar">
+            <h3>Calendar</h3>
+            <div className="calendar-grid">
+              {[...Array(31)].map((_, i) => (
+                <div className="calendar-day" key={i}>
+                  {i + 1}
+                </div>
+              ))}
             </div>
           </div>
         </div>
+      </div>
 
-        <Footer />
+      <Footer />
 
-      </>
-      )
+    </>
+  )
 }
 
-      export default App
+export default App
