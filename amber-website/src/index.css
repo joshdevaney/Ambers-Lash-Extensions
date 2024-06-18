@@ -81,7 +81,12 @@ body {
 }
 
 
-.about {}
+.about h3{
+  font-family: "Noto Serif Display", serif;
+  color: var(--text-color-3);
+
+}
+
 
 .info {
   height: 300px;
@@ -95,6 +100,7 @@ body {
 
 .info h4 {
   font-weight: 400;
+  
 }
 
 .about-body {
@@ -121,6 +127,12 @@ body {
   max-width: 500px;
 }
 
+.about-card h4 {
+  font-weight: 800;
+  font-family: "Noto Serif Display", serif;
+  color: var(--text-color-3);
+}
+
 
 
 .about-body img {
@@ -144,6 +156,8 @@ body {
 }
 
 .services h4 {
+  font-weight: 800;
+  font-family: "Noto Serif Display", serif;
   color: var(--text-color-3);
 }
 
@@ -163,6 +177,8 @@ body {
 }
 
 .styles h4 {
+  font-weight: 800;
+  font-family: "Noto Serif Display", serif;
   color: var(--text-color-3);
 }
 
@@ -172,6 +188,12 @@ body {
   align-items: center;
   gap: 40px;
   height: 100%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.styles-cards h4{
+  font-weight: 600;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 #card {
