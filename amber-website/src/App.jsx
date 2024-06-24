@@ -1,24 +1,20 @@
-
-import './App.css'
-import './variables.css'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
-import BookButton from './components/BookButton.jsx'
-import amber1 from './assets/amber1.jpg'
-import catEye from './assets/cat-eye.png'
-import dollEye from './assets/doll-eye.png'
-import naturalEye from './assets/natural-eye.png'
-
+import "./App.css";
+import "./variables.css";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import BookButton from "./components/BookButton.jsx";
+import amber1 from "./assets/amber1.jpg";
+import catEye from "./assets/cat-eye.png";
+import dollEye from "./assets/doll-eye.png";
+import naturalEye from "./assets/natural-eye.png";
 
 function App() {
-
-
   return (
     <>
       <Navbar />
 
       <div className="hero">
-        <h1>Need your 'lashes done?</h1>
+        <h1>Need your &apos;lashes done?</h1>
         <h3>Feel free to book an appointment.</h3>
         <BookButton />
       </div>
@@ -30,36 +26,53 @@ function App() {
         </div>
 
         <div className="about-body" id="about">
-
           <div className="about-card">
             <h4>About Amber</h4>
-            <p>I am AlT accredited in eyelash extensions. I completed my course in April of 2023 with Million Lashes training centre in Dublin.
+            <p>
+              I am AlT accredited in eyelash extensions. I completed my course
+              in April of 2023 with Million Lashes training centre in Dublin.
               <br></br> <br></br>
-              Amber's Lash Extensions was founded in May 2023. I work from home at the moment but am keen on expanding in the near future. I customise each set to suit your eye shape and lash length so that the eyelash extensions enhance your eyes and highlight your natural beauty. I enjoy helping people feel more confident in how they look.
+              Amber&apos;s Lash Extensions was founded in May 2023. I work from
+              home at the moment but am keen on expanding in the near future. I
+              customise each set to suit your eye shape and lash length so that
+              the eyelash extensions enhance your eyes and highlight your
+              natural beauty. I enjoy helping people feel more confident in how
+              they look.
               <br></br> <br></br>
-              The reaction when you look in the mirror and are delighted with the results is what makes the whole job worthwhile. My priority is to have you walking out the door feeling and looking wonderful.</p>
+              The reaction when you look in the mirror and are delighted with
+              the results is what makes the whole job worthwhile. My priority is
+              to have you walking out the door feeling and looking wonderful.
+            </p>
           </div>
 
           <img src={amber1} alt="Amber" />
-
         </div>
       </div>
 
       <div className="services">
         <h4>Services</h4>
-        <p>The services I currently provide include classic lash extensions, hybrid lash extensions and volume lash extensions. I aim to provide a comfortable and chilled environment for clients. I provide beverages ( bottled water and cans of soda) for every client.
+        <p>
+          The services I currently provide include classic lash extensions,
+          hybrid lash extensions and volume lash extensions. I aim to provide a
+          comfortable and chilled environment for clients. I provide beverages (
+          bottled water and cans of soda) for every client.
           <br></br> <br></br>
-          You won't leave empty handed, every client receives a basic after care package once their first appointment has been completed. Toilet breaks / smoke breaks are encouraged as I want you to feel like you are at home!</p>
-
+          You won &apos; t leave empty handed, every client receives a basic
+          after care package once their first appointment has been completed.
+          Toilet breaks / smoke breaks are encouraged as I want you to feel like
+          you are at home!
+        </p>
       </div>
 
       <div className="styles">
-
         <div className="styles-header">
           <h4>Styles</h4>
-          <p>I offer a variety of treatments to choose from based on your preferences or preffered style!
+          <p>
+            I offer a variety of treatments to choose from based on your
+            preferences or preffered style!
             <br></br> <br></br>
-            These are the treatments I offer!</p>
+            These are the treatments I offer!
+          </p>
         </div>
 
         <div className="styles-cards">
@@ -85,13 +98,11 @@ function App() {
         </div>
 
         <div className="price-list">
-
           <h2>Price List</h2>
 
           <span></span>
 
           <div className="price-cards">
-
             <div className="classic" id="price-card">
               <h4>Classic Lash Extensions</h4>
               <div className="price">
@@ -111,8 +122,6 @@ function App() {
                 <p>€50</p>
               </div>
             </div>
-
-
 
             <div className="hybrid" id="price-card">
               <h4>Hybrid Lash Extensions</h4>
@@ -148,7 +157,6 @@ function App() {
                 <p>Refill 4 Weeks</p>
                 <p>€50</p>
               </div>
-
             </div>
 
             <div className="lashes" id="price-card">
@@ -165,7 +173,6 @@ function App() {
                 <p>Lash Lift & Tint</p>
                 <p>€45</p>
               </div>
-
             </div>
 
             <div className="brows" id="price-card">
@@ -182,10 +189,8 @@ function App() {
                 <p>Brow Lamination & Tint</p>
                 <p>€40</p>
               </div>
-
             </div>
 
-            
             <div className="combo" id="price-card">
               <h4>Combo Deals</h4>
               <div className="price">
@@ -204,19 +209,13 @@ function App() {
                 <p>Volume extensions & Brows&#40;Tint & Lam&#41;</p>
                 <p>€90</p>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
 
       <div className="booking">
-
         <div className="booking-box">
-
           <div className="booking-header">
             <h4>Booking</h4>
             <p>Book your appointment here!</p>
@@ -247,7 +246,6 @@ function App() {
             </div>
 
             <BookButton />
-
           </div>
           <div className="calendar">
             <h3>Calendar</h3>
@@ -263,9 +261,8 @@ function App() {
       </div>
 
       <Footer />
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
