@@ -52,6 +52,9 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   text-rendering: optimizeLegibility;
+  font-family: "Epilogue", sans-serif;
+
+
 
 }
 
@@ -66,25 +69,76 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 700px;
-  font-family: "Noto Serif Display", serif;
+  min-height: 480px;
+  /* font-family: "Noto Serif Display", serif; */
   color: var(--text-color-1);
+  text-align: left;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.hero h1 {
+
+  font-weight: 600;
+  text-align: left;
 }
 
 .hero h3 {
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 300;
+  text-align: left;
 }
 
 .hero button {
   font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
+.hero-contents {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+}
 
-.about h3{
-  font-family: "Noto Serif Display", serif;
+
+.services h3 {
+
   color: var(--text-color-3);
 
+}
+
+.services-text {
+
+  width: 100%;
+  text-align: left;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: var(--background-color-1);
+  padding: 40px 300px 40px 300px;
+  gap: 40px;
+}
+
+.service {
+  background-color: var(--background-color-1);
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: space-between;
+  
+
+}
+
+.service img {
+  border-radius: 50%;
+  background: none;
+  max-width: 150px;
 }
 
 
@@ -100,7 +154,7 @@ body {
 
 .info h4 {
   font-weight: 400;
-  
+
 }
 
 .about-body {
@@ -129,7 +183,8 @@ body {
 
 .about-card h4 {
   font-weight: 800;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Epilogue", sans-serif;
+
   color: var(--text-color-3);
 }
 
@@ -141,29 +196,68 @@ body {
 }
 
 
-
-
-
-.services {
+.abouts {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 100px 0px;
+  align-items: center;
+  padding: 0px;
   background-color: var(--background-color-1);
+  padding: 40px 300px 40px 300px;
+  gap: 40px;
+}
+
+.about {
+  background-color: var(--background-color-1);
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: space-between;
+  
 
 }
 
-.services h4 {
-  font-weight: 800;
-  font-family: "Noto Serif Display", serif;
-  color: var(--text-color-3);
+.about img {
+  border-radius: 50%;
+  background: none;
+  max-width: 150px;
 }
 
-.services p {
-  max-width: 1100px;
+
+.about-text {
+  width: 100%;
+  text-align: left;
 }
+
+
+
+.amber-text {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+
+.amber{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.amber p{
+  margin: 0px;
+  color: var(--text-color-3)
+}
+
+
+
+
+
 
 .styles {
   display: flex;
@@ -178,7 +272,8 @@ body {
 
 .styles h4 {
   font-weight: 800;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Epilogue", sans-serif;
+
   color: var(--text-color-3);
 }
 
@@ -188,12 +283,14 @@ body {
   align-items: center;
   gap: 40px;
   height: 100%;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: "Epilogue", sans-serif;
+
 }
 
-.styles-cards h4{
+.styles-cards h4 {
   font-weight: 600;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: "Epilogue", sans-serif;
+
 }
 
 #card {
@@ -231,7 +328,7 @@ body {
 
 }
 
-.price-list span{
+.price-list span {
   color: var(--text-color-3);
   background-color: var(--text-color-3);
   max-width: 300px;
@@ -243,7 +340,8 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 20px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Epilogue", sans-serif;
+
   font-weight: 700;
   color: var(--text-color-3)
 }
@@ -276,7 +374,8 @@ body {
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 10px;
-  font-family: "Noto Serif Display", serif;
+  font-family: "Epilogue", sans-serif;
+
   font-weight: 700;
   color: var(--text-color-3);
 }
@@ -699,15 +798,16 @@ button:focus-visible {
 
 @media screen and (max-width: 560px) {
 
-  .price-list{
+  .price-list {
     margin-top: 0px;
     margin-bottom: 40px;
   }
+
   .price-cards {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    
+
     align-items: center;
     justify-content: center;
     /* text-align: center; */

@@ -11,10 +11,11 @@
     color: var(--text-color);
     cursor: pointer;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     transition: background-color 0.25s;
     box-sizing: border-box;
     text-align: center;
+    padding: 10px 30px 10px 30px;
 }
 
 .book-button:hover {

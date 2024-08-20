@@ -3,10 +3,13 @@ import "./variables.css";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import BookButton from "./components/BookButton.jsx";
-import amber1 from "./assets/amber1.jpg";
+import amber1 from "./assets/amber1.png";
 import catEye from "./assets/cat-eye.png";
 import dollEye from "./assets/doll-eye.png";
 import naturalEye from "./assets/natural-eye.png";
+import catEyeS from "./assets/cat-eye-s.png";
+import naturalEyeS from "./assets/natural-eye-s.png";
+import dollEyeS from "./assets/doll-eye-s.png";
 
 function App() {
   return (
@@ -14,55 +17,82 @@ function App() {
       <Navbar />
 
       <div className="hero">
-        <h1>Need your &apos;lashes done?</h1>
-        <h3>Feel free to book an appointment.</h3>
-        <BookButton />
-      </div>
-
-      <div className="about">
-        <div className="info">
-          <h3>Want more info?</h3>
-          <h4>Scroll down to find out what we have to offer!</h4>
-        </div>
-
-        <div className="about-body" id="about">
-          <div className="about-card">
-            <h4>About Amber</h4>
-            <p>
-              I am AlT accredited in eyelash extensions. I completed my course
-              in April of 2023 with Million Lashes training centre in Dublin.
-              <br></br> <br></br>
-              Amber&apos;s Lash Extensions was founded in May 2023. I work from
-              home at the moment but am keen on expanding in the near future. I
-              customise each set to suit your eye shape and lash length so that
-              the eyelash extensions enhance your eyes and highlight your
-              natural beauty. I enjoy helping people feel more confident in how
-              they look.
-              <br></br> <br></br>
-              The reaction when you look in the mirror and are delighted with
-              the results is what makes the whole job worthwhile. My priority is
-              to have you walking out the door feeling and looking wonderful.
-            </p>
-          </div>
-
-          <img src={amber1} alt="Amber" />
+        <div className="hero-contents">
+          <h1>Amber&apos;s Lash Extensions</h1>
+          <h3>Feel free to book an appointment.</h3>
+          <BookButton />
         </div>
       </div>
 
       <div className="services">
-        <h4>Services</h4>
-        <p>
-          The services I currently provide include classic lash extensions,
-          hybrid lash extensions and volume lash extensions. I aim to provide a
-          comfortable and chilled environment for clients. I provide beverages (
-          bottled water and cans of soda) for every client.
-          <br></br> <br></br>
-          You won &apos; t leave empty handed, every client receives a basic
-          after care package once their first appointment has been completed.
-          Toilet breaks / smoke breaks are encouraged as I want you to feel like
-          you are at home!
-        </p>
+
+
+        <div className="services-text">
+          <h3>Services</h3>
+        </div>
+
+        <div className="service">
+
+
+          <div className="eye">
+            <img src={catEyeS} alt="cat-eye-s" />
+            <p>Cat Eye</p>
+          </div>
+
+          <div className="eye">
+            <img src={naturalEyeS} alt="natural-eye-s" />
+            <p>Natural Eye</p>
+          </div>
+
+          <div className="eye">
+            <img src={dollEyeS} alt="doll-eye-s" />
+            <p>Doll Eye</p>
+          </div>
+
+          <div className="eye">
+            <img src={catEyeS} alt="cat-eye-s" />
+            <p>Cat Eye</p>
+          </div>
+
+          <div className="eye">
+            <img src={catEyeS} alt="cat-eye-s" />
+            <p>Cat Eye</p>
+          </div>
+        </div>
+
+
+
+
+
       </div>
+
+      <div className="abouts">
+
+
+        <div className="about-text">
+          <h3>About Amber</h3>
+        </div>
+
+        <div className="about">
+
+
+          <div className="amber">
+            <img src={amber1} alt="cat-eye-s" />
+            <div className="amber-text">
+              <h4>Amber</h4>
+              <p>Lash Specialist</p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
 
       <div className="styles">
         <div className="styles-header">
