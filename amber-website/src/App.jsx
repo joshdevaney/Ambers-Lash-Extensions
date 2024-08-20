@@ -28,7 +28,7 @@ function App() {
 
 
         <div className="services-text">
-          <h3>Services</h3>
+          <h4>Services</h4>
         </div>
 
         <div className="service">
@@ -70,7 +70,7 @@ function App() {
 
 
         <div className="about-text">
-          <h3>About Amber</h3>
+          <h4>About Amber</h4>
         </div>
 
         <div className="about">

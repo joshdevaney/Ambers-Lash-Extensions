@@ -254,6 +254,10 @@ body {
   color: var(--text-color-3)
 }
 
+.amber h4{
+  font-weight: 500;
+}
+
 
 
 
