@@ -82,7 +82,24 @@ function App() {
               <h4>Amber</h4>
               <p>Lash Specialist</p>
             </div>
+            
           </div>
+
+          <p>
+              I am AlT accredited in eyelash extensions. I completed my course
+              in April of 2023 with Million Lashes training centre in Dublin.
+              <br></br> <br></br>
+              Amber&apos;s Lash Extensions was founded in May 2023. I work from
+              home at the moment but am keen on expanding in the near future. I
+              customise each set to suit your eye shape and lash length so that
+              the eyelash extensions enhance your eyes and highlight your
+              natural beauty. I enjoy helping people feel more confident in how
+              they look.
+              <br></br> <br></br>
+              The reaction when you look in the mirror and are delighted with
+              the results is what makes the whole job worthwhile. My priority is
+              to have you walking out the door feeling and looking wonderful.
+            </p>
 
 
         </div>
@@ -95,37 +112,7 @@ function App() {
 
 
       <div className="styles">
-        <div className="styles-header">
-          <h4>Styles</h4>
-          <p>
-            I offer a variety of treatments to choose from based on your
-            preferences or preffered style!
-            <br></br> <br></br>
-            These are the treatments I offer!
-          </p>
-        </div>
-
-        <div className="styles-cards">
-          <div className="cat-eye" id="card">
-            <h4>Cat Eye</h4>
-            <img src={catEye} alt="Cat Eye" />
-          </div>
-
-          <div className="doll-eye" id="card">
-            <h4>Doll Eye</h4>
-            <img src={dollEye} alt="Doll Eye" />
-          </div>
-
-          <div className="kitten-eye" id="card">
-            <h4>Kitten Eye</h4>
-            <img src={naturalEye} alt="Kitten Eye" />
-          </div>
-
-          <div className="natural-eye" id="card">
-            <h4>Natural Eye</h4>
-            <img src={naturalEye} alt="Natural Eye" />
-          </div>
-        </div>
+        
 
         <div className="price-list">
           <h2>Price List</h2>
