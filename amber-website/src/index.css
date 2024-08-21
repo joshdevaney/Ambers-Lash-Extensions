@@ -7,19 +7,16 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
-[data-theme='dark'] {
-
-  --primary-color: #E7A8C6;
+[data-theme="dark"] {
+  --primary-color: #e7a8c6;
   --primary-color-2: #f5cee1;
-  --secondary-color: #A8E7C9;
+  --secondary-color: #a8e7c9;
   --text-color-1: #ffffff;
   --text-color-2: #588068;
   --background-color-1: #f5f3f5;
@@ -28,7 +25,6 @@
   --pastel-pink: #f4c2c2;
   --pastel-blue: #efc9d9;
   --pastel-purple: #d4b7f4;
-
 }
 
 a {
@@ -53,9 +49,6 @@ body {
   grid-template-rows: 1fr;
   text-rendering: optimizeLegibility;
   font-family: "Epilogue", sans-serif;
-
-
-
 }
 
 .hero {
@@ -64,8 +57,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-image: linear-gradient(rgba(109, 91, 109, 0.45),
-      rgba(109, 91, 109, 0.45)), url(./assets/hero5room2.png);
+  background-image: linear-gradient(
+      rgba(109, 91, 109, 0.45),
+      rgba(109, 91, 109, 0.45)
+    ),
+    url(./assets/hero5room2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,13 +74,13 @@ body {
 }
 
 .hero h1 {
-
   font-weight: 600;
   text-align: left;
+  margin-bottom: 10px;
 }
 
-.hero h3 {
-  margin-bottom: 20px;
+.hero h4 {
+  margin-bottom: 40px;
   font-weight: 300;
   text-align: left;
 }
@@ -101,15 +97,11 @@ body {
   justify-content: left;
 }
 
-
 .services h3 {
-
   color: var(--text-color-3);
-
 }
 
 .services-text {
-
   width: 100%;
   text-align: left;
 }
@@ -131,16 +123,16 @@ body {
   flex-direction: row;
   min-width: 100%;
   justify-content: space-between;
-  
-
+  flex-shrink: 1;
 }
 
 .service img {
   border-radius: 50%;
   background: none;
-  max-width: 150px;
+  max-width: 80%;
+  height: auto;
+  min-width: 0px;
 }
-
 
 .info {
   height: 300px;
@@ -154,7 +146,6 @@ body {
 
 .info h4 {
   font-weight: 400;
-
 }
 
 .about-body {
@@ -166,7 +157,6 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-
 
 .about-card {
   display: flex;
@@ -188,13 +178,9 @@ body {
   color: var(--text-color-3);
 }
 
-
-
 .about-body img {
   max-width: 30%;
-
 }
-
 
 .abouts {
   display: flex;
@@ -202,19 +188,17 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  background-color: var(--background-color-1);
+  background-color: var(--background-color-3);
   padding: 40px 300px 40px 300px;
   gap: 40px;
 }
 
 .about {
-  background-color: var(--background-color-1);
+  background-color: var(--background-color-3);
   display: flex;
   flex-direction: column;
   min-width: 100%;
   justify-content: space-between;
-  
-
 }
 
 .about img {
@@ -223,7 +207,7 @@ body {
   max-width: 150px;
 }
 
-.about p{
+.about p {
   text-align: left;
   margin-top: 40px;
 }
@@ -233,8 +217,6 @@ body {
   text-align: left;
 }
 
-
-
 .amber-text {
   width: 100%;
   text-align: left;
@@ -243,9 +225,7 @@ body {
   gap: 6px;
 }
 
-
-
-.amber{
+.amber {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -253,19 +233,14 @@ body {
   gap: 20px;
 }
 
-.amber p{
+.amber p {
   margin: 0px;
-  color: var(--text-color-3)
+  color: var(--text-color-3);
 }
 
-.amber h4{
+.amber h4 {
   font-weight: 500;
 }
-
-
-
-
-
 
 .styles {
   display: flex;
@@ -273,7 +248,7 @@ body {
   align-items: stretch;
   justify-content: center;
   gap: 40px;
-  padding: 100px 100px;
+  /* padding: 0px 300px; */
   background-color: var(--background-color-2);
   height: min-content;
 }
@@ -292,13 +267,11 @@ body {
   gap: 40px;
   height: 100%;
   font-family: "Epilogue", sans-serif;
-
 }
 
 .styles-cards h4 {
   font-weight: 600;
   font-family: "Epilogue", sans-serif;
-
 }
 
 #card {
@@ -313,7 +286,6 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.87);
   transition: box-shadow 0.25s ease-in-out;
 }
-
 
 #card img {
   max-width: 90%;
@@ -333,7 +305,18 @@ body {
   gap: 40px;
   width: 100%;
   margin-top: 60px;
+  /* padding: 0px 300px 0px 300px; */
+}
 
+.price-list-text {
+  width: 100%;
+  align-items: center;
+
+  display: flex;
+}
+
+.price-list-text h4 {
+  padding-left: 300px;
 }
 
 .price-list span {
@@ -344,16 +327,15 @@ body {
   margin-bottom: 40px;
 }
 
-.price-list h2 {
+/* .price-list h3 {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 20px;
   font-family: "Epilogue", sans-serif;
 
   font-weight: 700;
-  color: var(--text-color-3)
-}
-
+  color: var(--text-color-3);
+} */
 
 .price-cards {
   display: grid;
@@ -362,20 +344,15 @@ body {
   gap: 60px;
   width: 100%;
   align-items: start;
-
 }
-
-
 
 .price-list #price-card {
   text-align: left;
-  max-width: 400px;
-
+  max-width: 100%;
 }
 
 .price-list #price-card p {
   font-weight: 600;
-
 }
 
 .price-list #price-card h4 {
@@ -394,7 +371,11 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 10px;
+  max-width: 90%;
+}
 
+.price {
+  display: flex;
 }
 
 button {
@@ -454,8 +435,6 @@ button:focus-visible {
   text-align: left;
 }
 
-
-
 .booking-header select {
   padding: 10px;
   border-radius: 10px;
@@ -465,8 +444,6 @@ button:focus-visible {
   /* Remove default styles in Safari */
   background-color: var(--background-color-1);
   color: #76788d;
-
-
 }
 
 .booking-header button {
@@ -498,7 +475,6 @@ button:focus-visible {
 }
 
 .calendar h3 {
-
   font-weight: 500;
   font-size: 16pt;
 }
@@ -510,7 +486,6 @@ button:focus-visible {
   gap: 20px;
 }
 
-
 .calendar-day {
   display: flex;
   align-items: center;
@@ -520,11 +495,9 @@ button:focus-visible {
   cursor: pointer;
 }
 
-
 .calendar-day:hover {
   background-color: var(--pastel-blue);
   border-radius: 50%;
-
 }
 
 @media screen and (max-width: 1500px) {
@@ -537,20 +510,15 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     text-align: center;
-
   }
 
   #price-card {
     text-align: left;
     max-width: 300px;
-
   }
-
 }
 
-
 @media screen and (max-width: 1200px) {
-
   .services {
     padding: 50px 0px;
   }
@@ -562,12 +530,9 @@ button:focus-visible {
   .styles {
     padding: 50px 10%;
   }
-
 }
 
-
 @media screen and (max-width: 1000px) {
-
   .hero {
     min-height: 500px;
   }
@@ -575,7 +540,6 @@ button:focus-visible {
   .about-body {
     padding: 70px 10%;
     flex-direction: column-reverse;
-
   }
 
   .about-body img {
@@ -587,19 +551,15 @@ button:focus-visible {
     grid-template-areas: 1fr 1fr / 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 @media screen and (max-width: 900px) {
-
   .booking-box {
     display: flex;
     flex-direction: column;
     width: 80%;
     align-items: stretch;
   }
-
-
 
   .calendar-grid {
     margin-top: 20px;
@@ -616,23 +576,19 @@ button:focus-visible {
     align-items: center;
     justify-content: center;
     /* text-align: center; */
-
   }
 
   #price-card {
     text-align: left;
     width: 100%;
-
   }
 
   #price-card p {
     padding: 0px;
   }
-
 }
 
 @media screen and (max-width: 700px) {
-
   .about-body {
     padding: 50px 10%;
     flex-direction: column-reverse;
@@ -646,17 +602,14 @@ button:focus-visible {
 
   #card {
     padding: 8% 2%;
-
   }
 
   .info {
     height: 200px;
-
   }
 
   .about-body {
     padding: 50px 10%;
-
   }
 
   .calendar-grid {
@@ -682,13 +635,9 @@ button:focus-visible {
   .booking-header select {
     margin-bottom: 20px;
   }
-
-
 }
 
-
 @media screen and (max-width: 600px) {
-
   .info {
     padding: 0px 10%;
   }
@@ -717,7 +666,6 @@ button:focus-visible {
     z-index: 1;
   }
 
-
   #card h4 {
     width: 45%;
     padding: 10px 10px;
@@ -737,8 +685,6 @@ button:focus-visible {
     background-color: var(--pastel-blue);
   }
 
-
-
   #card.doll-eye {
     display: flex;
     flex-direction: row-reverse;
@@ -754,7 +700,6 @@ button:focus-visible {
     flex-direction: row-reverse;
     background-color: var(--pastel-pink);
   }
-
 
   #card img {
     max-width: 50%;
@@ -784,15 +729,8 @@ button:focus-visible {
     padding: 0px 10%;
   }
 
-
-
-
-
-
-
   #card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
-
   }
 
   .calendar-grid {
@@ -801,11 +739,9 @@ button:focus-visible {
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
   }
-
 }
 
 @media screen and (max-width: 560px) {
-
   .price-list {
     margin-top: 0px;
     margin-bottom: 40px;
@@ -820,7 +756,6 @@ button:focus-visible {
     justify-content: center;
     /* text-align: center; */
     padding: 0px 0px;
-
   }
 
   .price-list #price-card {
@@ -828,8 +763,6 @@ button:focus-visible {
     width: 100%;
     max-width: 300px;
     padding: 0px;
-
-
   }
 
   #price-card p {
@@ -865,10 +798,7 @@ button:focus-visible {
     border-radius: 10px;
     cursor: pointer;
   }
-
 }
-
-
 
 @media (prefers-color-scheme: light) {
   :root {

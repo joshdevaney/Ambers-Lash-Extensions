@@ -19,21 +19,17 @@ function App() {
       <div className="hero">
         <div className="hero-contents">
           <h1>Amber&apos;s Lash Extensions</h1>
-          <h3>Feel free to book an appointment.</h3>
+          <h4>Feel free to book an appointment.</h4>
           <BookButton />
         </div>
       </div>
 
       <div className="services">
-
-
         <div className="services-text">
           <h4>Services</h4>
         </div>
 
         <div className="service">
-
-
           <div className="eye">
             <img src={catEyeS} alt="cat-eye-s" />
             <p>Cat Eye</p>
@@ -59,65 +55,45 @@ function App() {
             <p>Cat Eye</p>
           </div>
         </div>
-
-
-
-
-
       </div>
 
       <div className="abouts">
-
-
         <div className="about-text">
           <h4>About Amber</h4>
         </div>
 
         <div className="about">
-
-
           <div className="amber">
             <img src={amber1} alt="cat-eye-s" />
             <div className="amber-text">
               <h4>Amber</h4>
               <p>Lash Specialist</p>
             </div>
-            
           </div>
 
           <p>
-              I am AlT accredited in eyelash extensions. I completed my course
-              in April of 2023 with Million Lashes training centre in Dublin.
-              <br></br> <br></br>
-              Amber&apos;s Lash Extensions was founded in May 2023. I work from
-              home at the moment but am keen on expanding in the near future. I
-              customise each set to suit your eye shape and lash length so that
-              the eyelash extensions enhance your eyes and highlight your
-              natural beauty. I enjoy helping people feel more confident in how
-              they look.
-              <br></br> <br></br>
-              The reaction when you look in the mirror and are delighted with
-              the results is what makes the whole job worthwhile. My priority is
-              to have you walking out the door feeling and looking wonderful.
-            </p>
-
-
+            I am AlT accredited in eyelash extensions. I completed my course in
+            April of 2023 with Million Lashes training centre in Dublin.
+            <br></br> <br></br>
+            Amber&apos;s Lash Extensions was founded in May 2023. I work from
+            home at the moment but am keen on expanding in the near future. I
+            customise each set to suit your eye shape and lash length so that
+            the eyelash extensions enhance your eyes and highlight your natural
+            beauty. I enjoy helping people feel more confident in how they look.
+            <br></br> <br></br>
+            The reaction when you look in the mirror and are delighted with the
+            results is what makes the whole job worthwhile. My priority is to
+            have you walking out the door feeling and looking wonderful.
+          </p>
         </div>
-
-
-
-
-
       </div>
 
-
       <div className="styles">
-        
-
         <div className="price-list">
-          <h2>Price List</h2>
-
-          <span></span>
+          <div className="price-list-text">
+            <h4>Price List</h4>
+          </div>
+          {/* <span></span> */}
 
           <div className="price-cards">
             <div className="classic" id="price-card">
