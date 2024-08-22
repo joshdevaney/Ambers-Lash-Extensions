@@ -10,8 +10,11 @@ import naturalEye from "./assets/natural-eye.png";
 import catEyeS from "./assets/cat-eye-s.png";
 import naturalEyeS from "./assets/natural-eye-s.png";
 import dollEyeS from "./assets/doll-eye-s.png";
+import BookingTest from "./components/BookingTest.jsx";
 
 function App() {
+
+  
   return (
     <>
       <Navbar />
@@ -208,6 +211,12 @@ function App() {
       </div>
 
       <div className="booking">
+        {/* <BookingTest /> */}
+
+        <div className="booking-test">
+        <iframe src="https://app.acuityscheduling.com/schedule.php?owner=33206180&appointmentType=67648727&ref=embedded_csp" title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+            <iframe src="https://app.acuityscheduling.com/schedule.php?owner=33206180&ref=embedded_csp" title="Schedule Appointment" frameBorder="0"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+        </div>
         <div className="booking-box">
           <div className="booking-header">
             <h4>Booking</h4>

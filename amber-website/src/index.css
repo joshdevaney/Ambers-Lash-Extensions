@@ -148,6 +148,22 @@ body {
   font-weight: 400;
 }
 
+.booking-test {
+  min-width: 600px;
+}
+
+
+iframe {
+  width: 1000px;
+  height: 1000px;
+  
+}
+
+
+
+
+
+
 .about-body {
   display: flex;
   gap: 40px;
